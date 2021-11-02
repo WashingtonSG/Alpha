@@ -1,0 +1,53 @@
+body{
+    background-color: hsla(214, 75%, 27%, 0.918);
+}
+
+p{
+    margin-left: 10px;
+    color: white;
+    background-color: #081E3B;
+    margin: 0.2em;
+    border-radius: 5%;
+}
+
+img{
+    box-shadow: 0.25em 0.25em 1em black;
+    border-radius: 5%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+  
+.containerCenter {
+    display: flex;
+    align-items: center;
+}
+
+.containerColumn{
+    display:flex;
+    flex-direction: column;
+    margin-top: 1em;
+    background-color: #2480FA;
+    border-radius: 5%;
+
+}
+
+.containerRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.containerRow p {
+    width: 50%;
+}
+
+.containerRow img {
+    width: 300px;
+    height: 150px;
+}

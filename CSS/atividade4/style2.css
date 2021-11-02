@@ -1,0 +1,39 @@
+*{
+    background-color: white;
+}
+.box {
+    border-radius: 20%;
+    border-style: dashed;
+    width: 250px;
+    height: 250px;
+    display: inline-block
+}
+
+#box_solid {
+    background-color: cyan;
+    border-style: dotted;
+    border-color: red;
+}
+
+#box_alpha {
+    background-color: hsla(212, 83%, 65%, 0.5);
+    border-style: double;
+    border-width: 2 3 3 2;
+    
+}
+#box_gradient {
+    background:  linear-gradient(#e66465, #9198e5);
+    border-style: hidden;
+}
+
+#box_img_no_repeat {
+    background-image: url(tux.jpg);
+    background-repeat: no-repeat;
+    border-style: double dotted;
+    border-width: 2 3 3 2;
+}
+
+#box_img_repeat {
+    background-image: url("https://e7.pngegg.com/pngimages/914/758/png-clipart-computer-icons-logo-github-github-logo-logo-computer-program-thumbnail.png");
+    background-repeat: repeat;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="pt-BR">
+        <title>Atividade 13</title>
+        <style>
+        </style>
+    </head>
+    <body onload="draw();">
+            <canvas id="canvas"> 
+            </canvas>
+            <script type="application/javascript">
+                function draw() {
+                    var canvas = document.getElementById('canvas');
+                    var ctx = canvas.getContext('2d');
+                    var windowHeight = window.innerHeight
+                    var windowWidth = window.innerWidth
+                    if(canvas.getContext){
+                        canvas.width = windowWidth;
+                        canvas.height = windowHeight;
+                        ctx.fillStyle = 'rgba(10, 0, 200, 1)';
+                        ctx.fillRect(0, 0, windowWidth, windowHeight);
+                        ctx.fillStyle = 'white'
+                        ctx.fillRect(200,100, 800, 400)
+                        ctx.font = '100px serif';
+                        ctx.fillStyle = 'black';
+                        ctx.fillText('Washington Gacho', 400, 300, 400, 200)
+                    }
+                }
+              </script>
+              <link rel="stylesheet" href="style.css"/>
+    </body>
+    <footer>
+
+    </footer>
+</html>

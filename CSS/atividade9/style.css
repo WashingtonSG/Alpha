@@ -1,0 +1,22 @@
+.box {
+    background-color: gray;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    flex: 1 1 260px;
+    margin: 10px ;
+    
+}
+footer {
+    font-size: small;
+    font-style: italic;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+}

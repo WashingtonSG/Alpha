@@ -1,0 +1,33 @@
+* {
+    font-size: 12;
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+h1, h2, h3, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button, div {
+    background-color: aquamarine;
+    color: black;
+    width: 50%;
+}
+button:hover {
+    background-color: rgba(58, 169, 212, 0.945);
+    font-size: 13;
+}
+footer p {
+    background-color: aliceblue;
+    font-size: medium;
+    
+}
+.pattern {
+    background-color:rgb(182, 228, 255);
+    align-content: center;
+    text-align: justify;
+} 
+#footer {
+    background-color: azure;
+    font-size: 14;
+
+}

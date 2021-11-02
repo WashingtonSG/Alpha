@@ -1,0 +1,40 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(26, 25, 25);
+    color: brown;
+}
+
+h1{
+    margin-left: 20%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+a:link {
+    text-decoration: underline;
+}
+a:focus {
+    color: brown;
+}
+a:hover {
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline wavy red;
+}
+
+.castTitle {
+    writing-mode: vertical-lr;
+    text-decoration:  underline;
+}
+
+img {
+    border-radius: 10%;
+    box-shadow: 0.5em 0.5em 2em rgb(99, 28, 28);
+}
+.test {
+    margin: 5em;
+}
+.test:hover {
+    background-color: aqua;
+}

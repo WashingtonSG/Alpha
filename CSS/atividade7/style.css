@@ -1,0 +1,37 @@
+*{
+    background-color: #040F16;
+    color: white;
+    width: 90%;
+    text-align: center;
+}
+
+.test {
+    background-color: #0094C6;
+    margin: 1em; 
+}
+.test2 {
+    background-color: hsla(209, 70%, 40%, 1);
+    margin: 1em; 
+}
+
+#test4 {
+    background-color: #001242FF;
+    margin: 1em;
+     
+}
+#test5 {
+    background-color: rgb(0, 100,255);
+    margin: 1em;
+}
+#test7 {
+    background-color: hsl(222, 50%, 50%);
+    margin: 1em; 
+}
+#test8 {
+    background-color: currentColor;
+    margin: 1em; 
+}
+#test9 {
+    background-color: initial;
+    margin: 1em; 
+}

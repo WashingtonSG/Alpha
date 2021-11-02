@@ -1,0 +1,12 @@
+* {
+    background-color: aliceblue;
+}
+h1 {
+    text-align: center;
+}
+
+img {
+    margin-left: 33%;
+    border-radius: 50%;
+    box-shadow: 1em 1em 1em rgb(8, 118, 221)
+}

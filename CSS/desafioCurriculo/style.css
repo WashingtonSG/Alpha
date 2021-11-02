@@ -1,0 +1,124 @@
+body {
+	margin: 0;
+	background-color: #3b4d70;
+	align-items: center;
+}
+header {
+	background-color: #3775f0;
+	width: 100vw;
+	padding: 0 2%;
+	box-shadow: 0.25em 0.25em 1em;
+}
+#headerContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+#contacts {
+	align-items: flex-end;
+	width: 180px;
+}
+header h1 {
+	align-items: center;
+	margin: 0;
+}
+header img {
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+h1,
+h2,
+p {
+	text-align: center;
+}
+nav {
+	display: flexbox;
+	width: 30%;
+}
+.navbar {
+	background-color: #80a6f2;
+	padding: 1em;
+	margin-bottom: 0.25em;
+	border-radius: 10px;
+	display: flex;
+	width: 80%;
+	box-shadow: 0.25em 0.25em 1em;
+}
+.navbar img {
+}
+.navbar:hover {
+	margin-left: 1em;
+}
+
+main {
+	width: 100%;
+}
+section {
+}
+#techs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100vw;
+}
+
+.tech {
+	display: flex;
+	flex-direction: column;
+	background-color: #80a6f2b0;
+	margin: 0.5%;
+	width: 30vw;
+	box-shadow: 0.3em 0.3em 1em;
+	border-radius: 10px;
+}
+.tech:hover {
+	box-shadow: 2em 2em 6em #1a3770;
+}
+.tech h1 {
+	text-align: center;
+}
+#database {
+}
+#languages {
+}
+#SO {
+}
+#git {
+}
+.icon {
+	height: 60px;
+	width: 60px;
+}
+.media {
+	height: 30px;
+	width: 30px;
+}
+.icon:hover {
+}
+
+#skills {
+}
+
+#aboutMe {
+}
+
+#projetos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+}
+
+.projeto {
+	background-color: #80a6f2;
+	padding: 1em;
+	margin-bottom: 0.25em;
+	border-radius: 10px;
+	box-shadow: 0.25em 0.25em 1em;
+	width: 25vw;
+	height: 4vh;
+}

@@ -1,0 +1,26 @@
+aside{
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    box-shadow: 10px;
+    background-color: antiquewhite;
+    overflow: visible;
+}
+h2, p{
+    text-align: center;
+}
+
+button{
+    background-color: rgb(245, 181, 7);
+    border-radius: 2px;
+}
+
+#scroll {
+    overflow: scroll;
+}
+#hidden {
+    overflow: hidden;
+}
+#auto {
+    overflow: auto;
+}

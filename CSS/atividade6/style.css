@@ -1,0 +1,69 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: rgb(26, 25, 25);
+    color: brown;
+}
+
+@font-face {
+    font-family: "Castlevania";
+    src: url("woff/BradleyGratis.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Castlevania2";
+    src: url("woff/FetteClassicUNZFraktur.woff2") format("woff2");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Zen+Antique+Soft&display=swap');
+
+h1{
+    margin-left: 20%;
+    font-family: "Castlevania";
+}
+ul {
+    list-style: none;
+}
+
+li {
+    font-family: "Castlevania2";
+    font-size: 1.3em;
+}
+
+a:link {
+    text-decoration: underline dotted;
+
+}
+
+a:focus {
+    color: pink;
+}
+
+a:active {
+    color: white;
+}
+
+a:hover {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: underline wavy red;
+}
+
+.castTitle {
+    writing-mode: vertical-lr;
+    text-decoration:  underline;
+}
+
+p {
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 1.2em;
+}
+img {
+    border-radius: 10%;
+    box-shadow: 0.5em 0.5em 2em rgb(99, 28, 28);
+}
+
+.container{
+    writing-mode: vertical-lr;
+    margin: 3em;
+}

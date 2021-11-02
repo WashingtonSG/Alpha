@@ -1,0 +1,35 @@
+1 - A regra de maior prioridade é a que possui a marcalçao !important depois da regra.
+Após isso vem a prioridade de cada seletor
+Por ultimo sequência de declaração.
+
+Prioridades de seletores:
+1 - CSS inline, são as regras CSS utilizadas diretamente no elemento HTML;
+2 - Seletores combinados
+3 - ID
+4 - class
+5 - atributo
+6 - elemento
+7 - * (todos os seletores)
+8 - Estilos herdados
+
+2- CSS é uma linguagem baseada em regras. — Você define regras especificando grupos de estilo que devem ser aplicados para elementos particulares ou grupos de elementos na sua página web. A regra é aberta com um selector . Isso seleciona o elemento HTML que vamos estilizar.
+Temos, então, um conjunto de chaves { }. Dentro deles, haverá uma ou mais declarações, que tomam a forma de pares propriedade e valor. Cada par especifica uma propriedade do(s) elemento(s) que estamos selecionando e, em seguida, então um valor que gostaríamos de atribuir à propriedade
+Antes dos dois pontos, temos a propriedade, e, depois, o valor. CSS properties possui diferentes valores permitidos, dependendo de qual propriedade está sendo especificado.
+
+3- print
+
+4- A regra de maior prioridade é a que possui a marcalçao !important depois da regra.
+Após isso vem a prioridade de cada seletor
+Por ultimo sequência de declaração.
+
+Prioridades de seletores:
+1 - CSS inline, são as regras CSS utilizadas diretamente no elemento HTML;
+2 - Seletores combinados
+3 - ID
+4 - class
+5 - atributo
+6 - elemento
+7 - * (todos os seletores)
+8 - Estilos herdados
+
+5- Somente se a segunda atribuição tiver precedência maior do que a primeira, caso contrário a primeira será a válida e a segunda será descartada.
