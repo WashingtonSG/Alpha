@@ -64,31 +64,49 @@ section {
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100vw;
+	justify-content: space-around;
 }
 
 .tech {
 	display: flex;
 	flex-direction: column;
 	background-color: #80a6f2b0;
-	margin: 0.5%;
-	width: 30vw;
+	margin: 1%;
+	width: 45vw;
 	box-shadow: 0.3em 0.3em 1em;
 	border-radius: 10px;
 }
 .tech:hover {
 	box-shadow: 2em 2em 6em #1a3770;
 }
+
 .tech h1 {
 	text-align: center;
 }
-#database {
+
+.test {
+	display: flex;
+	align-items: center;
 }
-#languages {
+
+.backgroundBar {
+	display: flex;
+	background-color: lightgray;
+	height: 20px;
+	width: 150px;
+	border-radius: 10px;
+	margin-left: 5%;
 }
-#SO {
+
+.progressBar {
+	display: flex;
+	background-color: #3775f0;
+	height: 20px;
+	width: 90px;
+	border-radius: 10px;
+	align-self: center;
 }
-#git {
-}
+
 .icon {
 	height: 60px;
 	width: 60px;
@@ -99,18 +117,26 @@ section {
 }
 .icon:hover {
 }
-
-#skills {
+#OS {
 }
 
-#aboutMe {
+#languages {
+}
+#others {
 }
 
-#projetos {
+#frameworks {
+}
+
+#projects {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-weight: 700;
+	background-color: #80a6f2;
+}
+#aboutMe {
+	background-color: bisque;
 }
 
 .projeto {
