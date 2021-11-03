@@ -90,7 +90,7 @@ a {
 .test {
 	display: flex;
 	align-items: center;
-	padding-top: 0.5%;
+	padding-top: 2%;
 }
 
 .backgroundBar {
@@ -104,11 +104,16 @@ a {
 
 .progressBar {
 	display: flex;
+	align-items: center;
 	background-color: #3775f0;
 	box-shadow: 4px 4px 8px inset #82aedd;
 	height: 100%;
 	width: 60%;
 	border-radius: 2px;
+}
+.percent {
+	display: flex;
+	font-weight: 700;
 }
 #postgres {
 	width: 70%;
