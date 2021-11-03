@@ -1,28 +1,15 @@
 body {
 	margin: 0;
-	background-color: #3b4d70;
-	align-items: center;
+	background-color: #919aa3;
 }
 header {
-	background-color: #3775f0;
-	width: 100vw;
-	padding: 0 2%;
-	box-shadow: 0.25em 0.25em 1em;
-}
-#headerContainer {
-	display: flex;
-	flex-direction: row;
+	background-color: #5873d6;
+	width: 100%;
 }
 
-#contacts {
-	align-items: flex-end;
-	width: 180px;
-}
 header h1 {
 	align-items: center;
 	margin: 0;
-}
-header img {
 }
 li {
 	list-style: none;
@@ -32,119 +19,175 @@ a {
 }
 h1,
 h2,
-p {
+p,
+a {
 	text-align: center;
-}
-nav {
-	display: flexbox;
-	width: 30%;
-}
-.navbar {
-	background-color: #80a6f2;
-	padding: 1em;
-	margin-bottom: 0.25em;
-	border-radius: 10px;
-	display: flex;
-	width: 80%;
-	box-shadow: 0.25em 0.25em 1em;
-}
-.navbar img {
-}
-.navbar:hover {
-	margin-left: 1em;
+	color: #334457;
 }
 
-main {
-	width: 100%;
+.navbar {
+	margin-left: 2vw;
+	text-align: center;
+	height: 5vh;
+	width: 25vw;
+	border-radius: 5px;
+	border-style: groove;
 }
-section {
+.navbar:hover {
+	box-shadow: 4px 4px 8px inset #bfcad6;
 }
-#techs {
+#nav {
+	display: flex;
+	flex-direction: row;
+}
+#contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 1%;
+}
+.contact {
+	padding-right: 5%;
+}
+#aboutMe {
+	display: flex;
+	flex-direction: column;
+}
+.about {
+	display: flex;
+	flex-direction: column;
+	margin-left: 40px;
+}
+#washington {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-bottom: -20%;
+	margin-left: 5px;
+}
+#skills {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 100vw;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .tech {
 	display: flex;
+	background-color: #bfcad6;
 	flex-direction: column;
-	background-color: #80a6f2b0;
-	margin: 1%;
-	width: 45vw;
-	box-shadow: 0.3em 0.3em 1em;
-	border-radius: 10px;
+	box-shadow: 1px 1px 2px;
+	border-radius: 5px;
+	border-style: groove;
+	width: 45%;
 }
-.tech:hover {
-	box-shadow: 2em 2em 6em #1a3770;
+.skillHeader {
+	background-color: #82aedd;
 }
-
-.tech h1 {
-	text-align: center;
+#frameworks {
+	width: 90%;
 }
-
 .test {
 	display: flex;
 	align-items: center;
+	padding-top: 0.5%;
 }
 
 .backgroundBar {
 	display: flex;
-	background-color: lightgray;
+	background-color: #4d5257;
 	height: 20px;
-	width: 150px;
-	border-radius: 10px;
+	width: 70%;
+	border-radius: 2px;
 	margin-left: 5%;
 }
 
 .progressBar {
 	display: flex;
 	background-color: #3775f0;
-	height: 20px;
-	width: 90px;
-	border-radius: 10px;
-	align-self: center;
+	box-shadow: 4px 4px 8px inset #82aedd;
+	height: 100%;
+	width: 60%;
+	border-radius: 2px;
 }
-
+#postgres {
+	width: 70%;
+}
+#msServer {
+	width: 60%;
+}
+#oracle {
+	width: 65%;
+}
+#c {
+	width: 90%;
+}
+#cSharp {
+	width: 65%;
+}
+#python {
+	width: 70%;
+}
+#php {
+	width: 30%;
+}
+#java {
+	width: 30%;
+}
+#javascript {
+	width: 50%;
+}
+#dotnet {
+	width: 60%;
+}
+#laravel {
+	width: 70%;
+}
+#node {
+	width: 30%;
+}
+#docker {
+	width: 60%;
+}
+#git {
+	width: 70%;
+}
+#figma {
+	width: 80%;
+}
+#css {
+	width: 80%;
+}
+#html {
+	width: 90%;
+}
 .icon {
 	height: 60px;
 	width: 60px;
 }
 .media {
 	height: 30px;
-	width: 30px;
+	width: 40px;
 }
 .icon:hover {
-}
-#OS {
-}
-
-#languages {
-}
-#others {
-}
-
-#frameworks {
+	opacity: 50%;
+	padding-left: 2%;
 }
 
 #projects {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
 	font-weight: 700;
-	background-color: #80a6f2;
+	justify-content: space-around;
 }
-#aboutMe {
-	background-color: bisque;
-}
-
 .projeto {
-	background-color: #80a6f2;
-	padding: 1em;
+	background-color: #bfcad6;
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 0.25em;
-	border-radius: 10px;
-	box-shadow: 0.25em 0.25em 1em;
-	width: 25vw;
-	height: 4vh;
+	box-shadow: 1px 1px 2px;
+	border-radius: 5px;
+	border-style: groove;
+	align-items: center;
+	width: 20%;
 }
