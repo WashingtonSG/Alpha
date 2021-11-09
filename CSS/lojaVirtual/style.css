@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+}
+#bodyContainer {
+	margin: 1em 5% 0 5%;
+}
+footer {
+	background-color: #0e345a;
+	color: white;
+	width: 100%;
+	margin: 0;
+	padding: 2% 5% 3% 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+a {
+	text-decoration: none;
+	color: w;
+}
+a:visited {
+	color: white;
+}
+#navBar {
+	display: flex;
+	color: #0e345a;
+}
+
+#logo {
+	background-color: #0e345a;
+	color: #ffffff;
+	padding: 3px;
+	font-family: lulo-clean-w01-one-bold, sans-serif;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+}
+#logo span {
+	background-color: white;
+	padding: 0.2em;
+	align-items: center;
+	color: #0e345a;
+	font-size: small;
+	font-weight: 500;
+}
+#logo span:hover {
+	background-color: #0e345a;
+	color: white;
+}
+
+#imgHeader {
+}
+
+.NavList {
+	list-style: none;
+	padding: 0.3em;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.BooksContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.Product {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 0.7em;
+}
+.Product img,
+p {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.SubTitle {
+	color: #0e345a;
+	font-family: futura-lt-w01-book, sans-serif;
+	margin-bottom: 0;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.Title {
+	color: #0e345a;
+	font-family: georgia, palatino, "book antiqua",
+		"palatino linotype", serif;
+	justify-content: center;
+	align-items: center;
+	font-size: 47px;
+	text-align: center;
+}
+
+.AddToCart {
+	display: flex;
+	flex-direction: column;
+}
+
+.products {
+	display: flex;
+	justify-content: space-around;
+}
+.StoryContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	color: #0e345a;
+	font-family: futura-lt-w01-book, sans-serif;
+	margin-bottom: 5em;
+}
+#description p {
+	margin-bottom: 1.5em;
+}
+#comingUpContainer {
+	background-color: #0e345a;
+	padding: 10px;
+}
+#comingUpBook {
+	width: 100%;
+	height: 500px;
+	border: #0e345a 5px;
+}
+#descriptionContainer {
+}

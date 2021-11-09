@@ -63,7 +63,7 @@ a {
 	flex-direction: row;
 	align-items: flex-start;
 	margin-bottom: -20%;
-	margin-left: 5px;
+	margin-left: 2%;
 }
 #skills {
 	display: flex;
@@ -80,12 +80,14 @@ a {
 	border-radius: 5px;
 	border-style: groove;
 	width: 45%;
+	margin-right: 2%;
+	margin-bottom: 1%;
 }
 .skillHeader {
 	background-color: #82aedd;
 }
 #frameworks {
-	width: 90%;
+	width: 92%;
 }
 .test {
 	display: flex;
