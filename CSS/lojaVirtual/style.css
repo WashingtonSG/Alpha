@@ -1,19 +1,7 @@
-body {
-	margin: 0;
-}
 #bodyContainer {
-	margin: 1em 5% 0 5%;
+	padding: 1em 5% 0 5%;
 }
-footer {
-	background-color: #0e345a;
-	color: white;
-	width: 100%;
-	margin: 0;
-	padding: 2% 5% 3% 5%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
+
 a {
 	text-decoration: none;
 	color: w;
@@ -132,4 +120,16 @@ p {
 	border: #0e345a 5px;
 }
 #descriptionContainer {
+}
+
+footer {
+	background-color: #0e345a;
+	color: white;
+	width: 100%;
+	margin: 0;
+	padding: 2% 5% 3% 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
 }

@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "D";
+	src: url("font1/D/D.ttf") format("truetype");
+}
+@font-face {
+	font-family: "belinda-w00-regular";
+	src: url("font1/belinda-w00-regular/Belinda\ W00\ Regular.ttf")
+		format("truetype");
+}
+* {
+	box-sizing: border-box;
+	font-family: "D";
+}
+body {
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+}
+hr {
+	height: 1px;
+	width: 20vw;
+	color: #ec0f00;
+}
+nav {
+	position: fixed;
+	width: 100vw;
+	height: 55px;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	z-index: 9999;
+}
+#brand {
+	background-image: url("media/background1.webp");
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#brand-container {
+	display: flex;
+	background-color: white;
+	opacity: 0.9;
+	width: 80vw;
+	height: 40vh;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	color: #ec0f00;
+}
+.nav-button {
+	border: none;
+	background-color: white;
+	width: 100px;
+	color: #ec0f00;
+}
+.nav-button:hover {
+	border-top: #ec0f00 solid;
+}
+
+.description-container {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+}
+#news {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #ec0f00;
+	justify-content: center;
+	width: 100vw;
+}
+span {
+	display: block;
+}
+#burguer {
+	font-family: "belinda-w00-regular";
+	font-size: 5em;
+}
+#burguer-container {
+	margin-top: 0;
+	padding-top: 0;
+}
+.news-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 36.2vw;
+}
+.news-subcontainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.new-background {
+	background-color: #ec0f00;
+}
+.section-header {
+	background-color: #215a9e;
+	color: white;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#kitchen-container {
+	display: flex;
+	justify-content: center;
+}
+#background-container {
+	background-image: url("media/background2.webp");
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	opacity: 95%;
+}
+footer {
+	display: flex;
+	background-color: #215a9e;
+	flex-direction: column;
+}
+.contact-container {
+	display: flex;
+	flex-direction: column;
+}
