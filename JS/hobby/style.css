@@ -16,6 +16,7 @@ main {
 	background-color: white;
 	margin: 10%;
 	box-shadow: 20px 20px 25px;
+	padding: 30px;
 }
 #washington-img {
 	width: 25%;
@@ -35,11 +36,27 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 1%;
 }
 #wearable {
 	width: 40%;
 }
-#hobbies {
+#hobbies-images {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: rgba(165, 164, 164, 0.589);
+	padding: 20px;
+	border-radius: 20px;
+}
+.hobby {
+	width: 45%;
+	border-radius: 0 40px 40px 40px;
+	margin-bottom: 10px;
+}
+.hobby:hover {
+	opacity: 0.55;
+}
+img {
+	border-radius: 20px;
 }
