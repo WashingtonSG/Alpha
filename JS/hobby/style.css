@@ -18,9 +18,7 @@ main {
 	box-shadow: 20px 20px 25px;
 	padding: 30px;
 }
-#washington-img {
-	width: 25%;
-}
+
 section {
 	display: flex;
 	justify-content: center;
@@ -38,9 +36,7 @@ section {
 	align-items: center;
 	margin-top: 1%;
 }
-#wearable {
-	width: 40%;
-}
+
 #hobbies-images {
 	display: flex;
 	justify-content: space-around;
