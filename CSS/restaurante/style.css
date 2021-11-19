@@ -74,13 +74,16 @@ nav {
 	justify-content: center;
 	width: 100vw;
 }
+
 span {
 	display: block;
 }
+
 #burguer {
 	font-family: "belinda-w00-regular";
 	font-size: 5em;
 }
+
 #burguer-container {
 	margin-top: 0;
 	padding-top: 0;

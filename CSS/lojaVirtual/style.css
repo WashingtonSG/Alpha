@@ -1,10 +1,13 @@
 #bodyContainer {
 	padding: 1em 5% 0 5%;
 }
-
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 a {
 	text-decoration: none;
-	color: w;
 }
 a:visited {
 	color: white;
@@ -132,4 +135,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
+}
+#principal ul .texto{
+
 }
