@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url("assets/img/wood.jpg");
+}
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	border-radius: 0 15px 15px 15px;
+	width: 90vw;
+	height: 80vh;
+	background-color: white;
+	margin: 5%;
+	box-shadow: 20px 20px 25px;
+	padding: 30px;
+}
+
+#about-me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#about-me-description > * {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#name {
+	display: flex;
+	justify-content: center;
+}
+#andre-matos {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -8%;
+	width: 85vw;
+}
+#andre-matos section {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-right: 10%;
+	background-color: rgb(179, 179, 179);
+	color: #2b2725;
+	font-weight: 700;
+	border-radius: 150px 10px 20px 0;
+	box-shadow: black 8px 8px 10px;
+}
+ul {
+	list-style: none;
+}
+#section-container {
+	display: flex;
+}
+#about-me img {
+	width: 20%;
+	margin-top: 50px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 0.5px;
+}
+.andre-matos-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: ;
+	padding: 2px;
+}
+.andre-matos-container img {
+	width: 300px;
+	height: 150px;
+	border-radius: 15px;
+}
