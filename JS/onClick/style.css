@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url("https://conteudo.imguol.com.br/c/entretenimento/2014/08/21/astrologia-1408656485003_v2_750x421.jpg.webp");
+}
+main {
+	display: flex;
+	color: white;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: rgb(29, 29, 29);
+	opacity: 90%;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+}
+input {
+	margin: 1%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 6px black inset;
+	opacity: 100%;
+	text-align: center;
+	color: black;
+}
+#button-container {
+	display: flex;
+}
+.input-button {
+	width: 50%;
+	opacity: 100%;
+}
