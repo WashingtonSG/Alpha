@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>hamburgueria</title>
+</head>
+<body>
+  <main>
+    <p>Preço:<span id="result"></span> </p>
+    <form onchange="calculatePrice()">
+      <div class="item-container">
+        <h2>Pão</h2>
+        <div class="item-container-radio">
+          <input type="radio" name="pao" id="pao-frances" 
+          value="3.0">
+          <label for="pao-frances">francês</label>
+        </div>
+
+        <div class="item-container-radio">
+          <input type="radio" name="pao" id="pao-australiano" 
+          value="8.0">
+          <label for="pao-australiano">australiano</label>
+        </div>
+
+        <div class="item-container-radio">
+          <input type="radio" name="pao" id="pao-brioche" 
+          value="6.0">
+          <label for="pao-brioche">brioche</label>
+        </div>
+
+      </div>
+
+      <div class="item-container">
+        <h2>hamburguer</h2>
+        <div class="item-container-radio">
+          <input type="radio" name="hamburguer" id="hamburguer-picanha" value="13.0">
+          <label for="hamburguer-picanha">picanha</label>
+        </div>
+
+        <div class="item-container-radio">
+          <input type="radio" name="hamburguer" id="hamburguer-costela" value="10.0">
+          <label for="hamburguer-costela">costela</label>
+        </div>
+        
+        <div class="item-container-radio">
+          <input type="radio" name="hamburguer" id="hamburguer-vegano"
+          value="12.0">
+          <label for="hamburguer-vegano">vegano</label>
+        </div>
+
+      </div>
+
+      <div class="item-container">
+        <h2>Salada</h2>
+        <div class="item-container-radio">
+          <input type="radio" name="salada" id="salada-alface"
+          value="1.50">
+          <label for="salada-alface">alface</label>
+        </div>
+
+        <div class="item-container-radio">
+          <input type="radio" name="salada" id="salada-tomate"
+          value="1.50">
+          <label for="salada-tomate">tomate</label>
+        </div>
+
+        <div class="item-container-radio">
+          <input type="radio" name="salada" id="salada-ausente"
+          value="0">
+          <label for="salada-ausente">sem salada</label>
+        </div>
+
+      </div>
+
+      <div class="item-container">
+        <h2>queijo</h2>
+        <div class="item-container-radio">
+          <input type="radio" name="queijo" id="queijo-mussarela"
+          value="3.0">
+          <label for="queijo-mussarela">mussarela</label>
+        </div>
+
+        <div class="item-container-radio">
+          <input type="radio" name="queijo" id="queijo-prato"
+          value="3.0">
+          <label for="queijo-prato">prato</label>
+        </div>
+
+        <div class="item-container-radio">
+          <input type="radio" name="queijo" id="queijo-cheddar"
+          value="5.0">
+          <label for="queijo-cheddar">cheddar</label>
+        </div>
+
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
