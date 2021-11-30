@@ -9,4 +9,3 @@ function calculatePrice() {
   }
   document.getElementById("result").innerHTML = String(price);
 }
-calculatePrice()

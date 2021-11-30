@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bart chalkboard</title>
+</head>
+<body>
+  <main>
+    <h1>Bart</h1>
+
+    <div>
+
+      <label for="phrase">
+        frase:
+        <input type="text" id="phrase">
+      </label>
+
+      <label for="times">
+        numero de vezes:
+        <input type="number" id="times">
+      </label>
+
+      <input type="button" value="escrever" onclick="test()">
+
+    </div>
+
+    <div id="bart-container">
+
+      <div id="chalkboard">
+        <p id="result"></p>
+      </div>
+
+      <p>Vezes que o quadro foi apagado: <span id="clear-count"></span></p>
+
+    </div>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
