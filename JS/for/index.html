@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Random Race</title>
+</head>
+<body>
+  <main>
+    <section>
+      <ul>
+        <li id="pedro">Pedro</li>
+        <li id="juca">Juca</li>
+        <li id="edna">Edna</li>
+      </ul>
+      <section id="input-container">
+        <label for="corrida-rapida">
+          <input type="radio" name="race" id="corrida-rapida" value="10">
+          corrida rápida (10 voltas)
+        </label>
+  
+        <label for="grande-premio">
+          <input type="radio" name="race" id="grande-premio" value="70">
+          Grande prêmio (70 voltas)
+        </label>
+      
+        <label for="enduro">
+          <input type="radio" name="race" id="enduro" value="160">
+          Enduro (160 voltas)
+        </label> 
+        
+        <input type="button" value="GO!" onclick="insertion()">
+      
+      </section>
+      <div id="result"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
