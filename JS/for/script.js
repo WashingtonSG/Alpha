@@ -30,25 +30,27 @@ function race(laps) {
     wins[greater([pedro, juca, edna])] +=1;
 
   }
-  return greater(wins); 
+  return [greater(wins), wins[greater(wins)]]; 
 }
 
 function insertion() {
   const laps = document.querySelector('input[name="race"]:checked').value;
-  const winner = race(laps);
-  const winnerElement = document.createElement("h2");
-  const result = document.getElementById("result");
-  winnerElement.innerHTML = "";
-  winnerElement.innerHTML = "Você ganhou: "
-  result.append(winnerElement);
+  const winner = race(laps)[0];
+  const winnerLaps = race(laps)[1];
+  const result = document.getElementById("result")
+  result.innerHTML = "";
+  result.innerHTML = "Você ganhou:"
 
   if (winner == 0) {
-    winnerElement.innerHTML += "Pedro";
+   result.innerHTML += '<span id="winner">Pedro com '
+  + winnerLaps + " voltas";
   } 
   else if(winner ==1) {
-    winnerElement.innerHTML += "Juca";
+    result.innerHTML += '<span id="winner">Juca com '
+    + winnerLaps + " voltas";
   }
   else {
-    winnerElement.innerHTML += "Edna";
+    result.innerHTML += '<span id="winner">Edna com '
+    + winnerLaps + " voltas";
   }
 }
