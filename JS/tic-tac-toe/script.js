@@ -1,23 +1,27 @@
+let turn = 0;
+
 function fillDiv(id) {
-  const div = document.getElementById(id);
-
-  div.innerHTML = '';
-  div.append(letterXandO());
-  div.value = letterXandO();
-
+  const button = document.getElementById(id);
+  button.value = letterXandO()
 }
 function letterXandO() {
-  const letter = document.createElement("span");
+  let letter;
+
   if (turn) {
-    letter.innerHTML = "O";
+    letter = "X";
+    turn = 0;
 
   } else {
-    letter.innerHTML = "X";
+    letter = "O";
+    turn = 1;
   }
   return letter;
 }
 
 function winner() {
-  const boxes = document.querySelector(".box");
-
+  const boxes = document.querySelectorAll(".box")
+  boxes.forEach(element => {
+    console.log(element.value)
+  });
+  console.log(boxes)
 }
