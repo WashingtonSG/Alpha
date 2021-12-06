@@ -24,4 +24,4 @@ function winner() {
     console.log(element.value)
   });
   console.log(boxes)
-}
+} 
