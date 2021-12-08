@@ -1,3 +1,53 @@
+const cars = {
+  "popular": {
+    "maxVelocity": {
+      "min": "180",
+      "max": "200"
+    },
+    "minVelocity": {
+      "min": "110",
+      "max": "130"
+    },
+    "skid": {
+      "min": "3",
+      "max": "4"
+    },
+    "rarity": "0.6"
+  },
+  "sport": {
+    "maxVelocity": {
+      "min": "195",
+      "max": "215"
+    },
+    "minVelocity": {
+      "min": "125",
+      "max": "145"
+    },
+    "skid": {
+      "min": "2",
+      "max": "3"
+    },
+    "rarity": "0.94"
+  },
+  "supersport": {
+    "maxVelocity": {
+      "min": "210",
+      "max": "230"
+    },
+    "minVelocity": {
+      "min": "140",
+      "max": "160"
+    },
+    "skid": {
+      "min": "1",
+      "max": "1.75"
+    },
+    "rarity": "0.95"
+  }
+}
+
+
+
 function calculateRandom (min, max) {
   return Math.random() * (max-min) + min;
 }
@@ -7,27 +57,15 @@ function calculateVelocity(minVelocity, maxVelocity, skid) {
   return result
 }
 
-function createCar (chance) {
-  if (chance < 0.6) {
-    const commonCar = new Object ();
-    commonCar.minVelocity = {min: 110, max: 130};
-    commonCar.maxVelocity = {min: 180, max: 200};
-    commonCar.skid = {min: 3,max:4};
-    return commonCar;  
+function whichCar (chance) {
+  if ( chance < parseFloat(cars.popular.rarity) ) {
+    return cars.popular;  
 
-  } else  if(chance > 0.6 && chance < 0.95){
-    const sportCar = new Object ()
-    sportCar.minVelocity =  {min: 125, max: 145};
-    sportCar.maxVelocity =  {min: 195, max: 215};
-    sportCar.skid =  {min: 2, max: 3};
-    return sportCar;
+  } else  if( chance < parseFloat(cars.sport.rarity) ){
+    return cars.sport;
   }
   else {
-    const superSportCar = new Object ();
-    superSportCar.minVelocity =  {min:140, max: 160};
-    superSportCar.maxVelocity =  {min:210, max: 230};
-    superSportCar.skid =  {min: 1, max: 1.75};
-    return superSportCar;
+    return cars.supersport;
   }
 }
 // skid * Math.floor( Math.random() *(maxVelocity - minVelocity)) + minVelocity  )
@@ -54,12 +92,12 @@ function race(laps) {
   let pedro, juca, edna;
   for (let i = 0; i < laps; i++) {
 
-    pedro = createCar( Math.random() );
-    juca  = createCar( Math.random() );
-    edna  = createCar( Math.random() );
+    pedro = whichCar( Math.random() );
+    juca  = whichCar( Math.random() );
+    edna  = whichCar( Math.random() );
 
     pedroVelocity = calculateVelocity(
-      calculateRandom(pedro.minVelocity.min, pedro.minVelocity.max),
+      calculateRandom(),
       calculateRandom(pedro.maxVelocity.min, pedro.maxVelocity.max),
       calculateRandom(pedro.skid.min, pedro.skid.max)
       );
@@ -102,4 +140,4 @@ function insertion() {
     + winnerLaps + " voltas";
   }
 }
-console.log( createCar(Math.random()) );
+console.log( whichCar( Math.random() ) );
