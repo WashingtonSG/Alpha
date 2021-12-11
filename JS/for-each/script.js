@@ -45,7 +45,50 @@ const cars = {
     "rarity": "0.95"
   }
 }
+const players = [
+  {
+    player: {
+      car: {
+       minVelocity: "",
+       maxVelocity: "",
+       skid: ""
+      },
 
+    name: "Pedro",
+    experience: "450",
+    level : ""
+    }
+  },
+  {
+    player: {
+      car: {
+       minVelocity: "",
+       maxVelocity: "",
+       skid: ""
+      },
+
+      name: "Juca",
+      experience: "900000000",
+      level: "",
+      
+    },
+  },
+  {
+    player: {
+      car: {
+        minVelocity: "",
+        maxVelocity: "",
+        skid: ""
+        },
+
+      name: "Edna",
+      experience: "200",
+      level: "",
+    },
+  },
+
+
+];
 
 
 function calculateRandom (min, max) {
@@ -88,7 +131,23 @@ function greater(array) {
 }
 
 function race(laps) {
-  let wins = [0, 0 ,0]; // pedro, juca amd edna victories
+
+  const wins = [
+    {
+    name: "Pedro",
+    wins: "",
+    },
+
+    {
+    name: "Juca",
+    wins: "",
+    },
+
+    {
+    name: "Edna",
+    wins: "",
+    }      
+  ];
   let pedro, juca, edna;
   for (let i = 0; i < laps; i++) {
 
@@ -97,7 +156,7 @@ function race(laps) {
     edna  = whichCar( Math.random() );
 
     pedroVelocity = calculateVelocity(
-      calculateRandom(),
+      calculateRandom(pedro.minVelocity.min, pedro.minVelocity.max),
       calculateRandom(pedro.maxVelocity.min, pedro.maxVelocity.max),
       calculateRandom(pedro.skid.min, pedro.skid.max)
       );
@@ -114,18 +173,24 @@ function race(laps) {
       calculateRandom(edna.skid.min, edna.skid.max)
       );
       
-    wins[ greater([pedroVelocity, jucaVelocity, ednaVelocity]) ] +=1;
+    wins[ greater([pedroVelocity, jucaVelocity, ednaVelocity]) ].wins += 1 ;
 
   }
-  return [greater(wins), wins[greater(wins)]]; 
+  return wins;
 }
 
 function insertion() {
   const laps = document.querySelector('input[name="race"]:checked').value;
   const winner = race(laps)[0];
   const winnerLaps = race(laps)[1];
+  const experience = raceExperience(laps);
+
   const result = document.getElementById("result")
   result.innerHTML = "";
+  function experienceUp(item) {
+    item.player.experience +=  experience;
+  }
+  players.forEach(experienceUp)
 
   if (winner == 0) {
    result.innerHTML += '<span id="winner">Pedro ganhou com '
@@ -141,4 +206,18 @@ function insertion() {
   }
 }
 
-console.log(  whichCar( Math.random() ) )
+function levelUp (item) {
+  item.player.level = Math.floor (item.player.experience/450)
+  if(item.player.level > 10)
+    item.player.level = 10
+  console.log(item.player.level)
+}
+function raceExperience(laps) {
+  if(laps == 10)
+    return [200, 120, 50];
+  if(laps == 70)
+    return [220, 130, 75];
+  if(laps == 160)
+    return [250, 150, 90];
+}
+console.log(race(70))

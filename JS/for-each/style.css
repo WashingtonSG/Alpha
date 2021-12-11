@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	background-image: url("assets/cars_trip.jpg");
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+main {
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 20px;
+	height: 20vh;
+	width: 30vw;
+	box-shadow: 2px 5px 2px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2% 5%;
+}
+section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-size: 1em;
+	font-weight: 700;
+	justify-content: center;
+	align-items: center;
+}
+label {
+	font-size: 1.5em;
+}
+li {
+	list-style: none;
+	padding: 10% 20%;
+	margin: 1px;
+	background-color: cadetblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	border: 1px black solid;
+}
+ul #juca {
+	background-color: #b6352a;
+}
+ul #pedro {
+	background-color: #40963a;
+}
+ul #edna {
+	background-color: #147aaa;
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+	font-weight: 700;
+}
+section #go-button {
+	padding: 0 20%;
+	box-shadow: 5px 5px 10px black;
+	margin-bottom: 5%;
+}
+span {
+	background-color: rgb(255, 255, 255);
+	box-shadow: 10px 10px 10px black;
+	border-radius: 10px;
+}
