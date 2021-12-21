@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Array map</title>
+</head>
+<body>
+  <main>
+    <h1>Calculadora</h1>
+    <form action="index.html">
+        <input type= "text" placeholder="Nome do cliente"    id="name" required>
+        <input type= "date" placeholder="data de vencimento" id="due-date" required>
+        <input type= "text" placeholder="valor da compra"   id="purchase" required>
+      <div>
+        <button type="button" onclick="getValues()">cadastrar</button>
+        <button type="button" onclick="calculateFees()">calcular</button>
+        <button type="button" onclick="groupByName()">agrupar por nome</button>
+        <button type="button" onclick="groupByDate()">agrupar por data</button>
+      </div>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>nome</th>
+          <th>data</th>
+          <th>valor</th>
+          <th>Juros</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
