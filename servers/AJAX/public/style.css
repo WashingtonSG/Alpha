@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	background-color: gray;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20vw;
+	height: 10vh;
+	border-radius: 10px;
+}
+input {
+	width: 5vw;
+	height: 3vh;
+}
+#result {
+	margin: 10px;
+	width: 30vw;
+	height: 50vh;
+	padding: 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+}
+.products {
+	background-color: brown;
+	justify-content: center;
+	color: white;
+	height: 6vh;
+	width: 10vw;
+	margin: 2px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px gray;
+}

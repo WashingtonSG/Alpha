@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>fetch API 1.1.0 - incremental search</title>
+</head>
+<body>
+  <main>
+    <h1>consultar clientes</h1>
+    <div>
+      <div>
+        <select name="data-types" id="data-type-select">
+          <option value="">--Escolha uma opção--</option>
+          <option value="id">id</option>
+          <option value="name">nome</option>
+          <option value="email">e-mail</option>
+        </select>
+        <label for="text-input"></label>
+        <input type="text" min="0" id="text-input" name="id">
+      </div>
+    </div>
+    <div id="result"></div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
