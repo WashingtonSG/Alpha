@@ -1,7 +1,6 @@
 function calcRandom(max) {
   return Math.ceil(Math.random() * max);
 }
-
 const numbers = [];
 function playLottery() {
   const id = setInterval(() => {
@@ -18,5 +17,9 @@ function playLottery() {
 
 function render(number) {
   const div = document.querySelector("div");
-  div.innerHTML +=  `${number}`
+  div.innerHTML +=  ` ${number} `
+  if(numbers.length > 6) {
+    div.innerHTML = '';
+    numbers.length = 0;
+  }
 }
